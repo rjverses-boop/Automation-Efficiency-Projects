@@ -1,7 +1,6 @@
 # IT Automation Projects (PowerShell + Python)
 
-This repository showcases a collection of automation projects designed to simulate real-world IT operations in enterprise environments.  
-The projects demonstrate skills in PowerShell, Python, Active Directory automation, log analysis, asset tracking, and reporting.
+This repository showcases a collection of automation projects designed to simulate real-world IT operations in enterprise environments, demonstrating skills in PowerShell, Python, Active Directory automation, log analysis, asset tracking, and reporting.
 
 ---
 
@@ -14,7 +13,7 @@ Includes:
 - `Create-Users.ps1` – Automates onboarding from CSV
 - `Reset-Password.ps1` – Secure password reset tool with logging
 - `System-Reports.ps1` – Automated reporting for AD and system data
-- Sample Input: `sample_data/new_users.csv`
+- Sample Input: `sampledata/newusers.csv`
 
 This suite simulates a typical sysadmin toolkit used for user lifecycle management.
 
@@ -24,10 +23,10 @@ This suite simulates a typical sysadmin toolkit used for user lifecycle manageme
 Located in: `python-automation/`
 
 Includes:
-- `log_analysis.py` – Detects failed login patterns and anomalies
-- `asset_tracker.py` – Mini asset management system using SQLite
-- `patch_report.py` – Simulates patch/compliance reporting
-- Sample Logs: `sample_logs/system.log`
+- `loganalysis.py` – Detects failed login patterns and anomalies
+- `assettracker.py` – Mini asset management system using SQLite
+- `patchreport.py` – Simulates patch/compliance reporting
+- Sample Logs: `samplelogs/system.log`
 
 These scripts demonstrate automation, data processing, and IT operations analytics.
 
@@ -81,12 +80,6 @@ Additional docs located under `docs/`:
 - Project overview
 - Screenshots
 - Expanded explanations for each script
-
----
-
-## 📄 Resume-Ready Summary
-
-**Developed cross‑platform automation solutions using PowerShell and Python to simulate enterprise IT workflows, including user onboarding, password resets, log analysis, and asset tracking, reducing manual effort by ~60%.**
 
 ---
 
