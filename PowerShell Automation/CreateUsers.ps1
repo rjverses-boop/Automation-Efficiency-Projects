@@ -1,0 +1,22 @@
+Import-Module ActiveDirectory
+
+$users = Import-Csv ".\new_users.csv"
+
+foreach ($u in $users) {
+    $displayName = "$($u.FirstName) $($u.LastName)"
+    $ou = "OU=$($u.Department),OU=Employees,DC=example,DC=com"
+
+    New-ADUser `
+        -Name $displayName `
+        -GivenName $u.FirstName `
+        -Surname $u.LastName `
+        -SamAccountName $u.Username `
+        -UserPrincipalName "$($u.Username)@example.com" `
+        -Department $u.Department `
+        -Title $u.Title `
+        -AccountPassword (ConvertTo-SecureString $u.InitialPassword -AsPlainText -Force) `
+        -Enabled $true `
+        -Path $ou
+
+    Write-Host "Created account for $displayName"
+}
