@@ -11,6 +11,6 @@ Set-ADAccountPassword -Identity $User -NewPassword (ConvertTo-SecureString $newP
 Set-ADUser -Identity $User -ChangePasswordAtLogon $true
 
 $log = "Password reset for $User at $(Get-Date) with temp: $newPass"
-Add-Content -Path .\password_reset_log.txt -Value $log
+Add-Content -Path .\PasswordResetLog.txt -Value $log
 
 Write-Host "Password reset complete."
