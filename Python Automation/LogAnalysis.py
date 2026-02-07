@@ -1,7 +1,7 @@
 import re
 from collections import Counter
 
-failed_logins = Counter()
+FailedLogins = Counter()
 
 with open("system.log", "r") as f:
     for line in f:
