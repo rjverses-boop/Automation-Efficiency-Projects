@@ -1,6 +1,6 @@
 Import-Module ActiveDirectory
 
-$users = Import-Csv ".\new_users.csv"
+$users = Import-Csv ".\NewUsers.csv"
 
 foreach ($u in $users) {
     $displayName = "$($u.FirstName) $($u.LastName)"
@@ -11,7 +11,7 @@ foreach ($u in $users) {
         -GivenName $u.FirstName `
         -Surname $u.LastName `
         -SamAccountName $u.Username `
-        -UserPrincipalName "$($u.Username)@example.com" `
+        -UserPrincipalName "$($u.Username)@lab.local" `
         -Department $u.Department `
         -Title $u.Title `
         -AccountPassword (ConvertTo-SecureString $u.InitialPassword -AsPlainText -Force) `
