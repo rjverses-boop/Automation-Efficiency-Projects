@@ -4,7 +4,7 @@ $users = Import-Csv ".\NewUsers.csv"
 
 foreach ($u in $users) {
     $displayName = "$($u.FirstName) $($u.LastName)"
-    $ou = "OU=$($u.Department),OU=Employees,DC=example,DC=com"
+    $ou = "OU=$($u.Department),DC=lab,DC=local"
 
     New-ADUser `
         -Name $displayName `
