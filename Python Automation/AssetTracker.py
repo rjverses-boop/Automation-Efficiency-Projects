@@ -11,9 +11,9 @@ cur.execute("""CREATE TABLE IF NOT EXISTS assets (
     last_update TEXT
 )""")
 
-def add(device, user, status, LastUpdate):
+def add(device, user, status, last_update):
     cur.execute("INSERT INTO assets (device, user, status, last_update) VALUES (?,?,?,?)",
-                (device, user, status, LastUpdate))
+                (device, user, status, last_update))
     conn.commit()
 
 add("Dell-Laptop-1", "Alex Turner", "Active", "2026-02-05")
