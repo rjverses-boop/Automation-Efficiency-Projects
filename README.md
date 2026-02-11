@@ -7,7 +7,7 @@ This repository showcases a collection of automation projects designed to simula
 ## Project Structure
 
 ### 1. PowerShell Automation Suite
-Located in: `PowerShell-Automation/`
+Located in: `PowerShellAutomation/`
 
 Includes:
 - `CreateUsers.ps1` – Automates onboarding from CSV
@@ -20,7 +20,7 @@ This suite simulates a typical sysadmin toolkit used for user lifecycle manageme
 ---
 
 ### 2. Python Automation Tools
-Located in: `python-automation/`
+Located in: `PythonAutomation/`
 
 Includes:
 - `LogAnalysis.py` – Detects failed login patterns and anomalies
