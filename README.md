@@ -7,12 +7,12 @@ This repository showcases a collection of automation projects designed to simula
 ## Project Structure
 
 ### 1. PowerShell Automation Suite
-Located in: `powershell-automation/`
+Located in: `PowerShell-Automation/`
 
 Includes:
-- `Create-Users.ps1` – Automates onboarding from CSV
-- `Reset-Password.ps1` – Secure password reset tool with logging
-- `System-Reports.ps1` – Automated reporting for AD and system data
+- `CreateUsers.ps1` – Automates onboarding from CSV
+- `ResetPassword.ps1` – Secure password reset tool with logging
+- `SystemReports.ps1` – Automated reporting for AD and system data
 - Sample Input: `sampledata/newusers.csv`
 
 This suite simulates a typical sysadmin toolkit used for user lifecycle management.
@@ -23,9 +23,9 @@ This suite simulates a typical sysadmin toolkit used for user lifecycle manageme
 Located in: `python-automation/`
 
 Includes:
-- `loganalysis.py` – Detects failed login patterns and anomalies
-- `assettracker.py` – Mini asset management system using SQLite
-- `patchreport.py` – Simulates patch/compliance reporting
+- `LogAnalysis.py` – Detects failed login patterns and anomalies
+- `AssetTracker.py` – Mini asset management system using SQLite
+- `PatchReport.py` – Simulates patch/compliance reporting
 - Sample Logs: `samplelogs/system.log`
 
 These scripts demonstrate automation, data processing, and IT operations analytics.
@@ -55,7 +55,7 @@ These scripts demonstrate automation, data processing, and IT operations analyti
 Run from an elevated PowerShell console:
 
 cd powershell-automation
-.\Create-Users.ps1
+.\CreateUsers.ps1
 
 Requires:
 - Windows environment
@@ -64,9 +64,9 @@ Requires:
 ### Python Scripts
 
 cd python-automation
-python log_analysis.py
-python asset_tracker.py
-python patch_report.py
+python LogAnalysis.py
+python AssetTracker.py
+python PatchReport.py
 
 Requires:
 - Python 3.9+
@@ -81,6 +81,34 @@ Additional docs located under `docs/`:
 - Screenshots
 - Expanded explanations for each script
 
+flowchart TD
+
+A[IT Automation Projects Repo] --> B[PowerShell Automation Suite]
+A --> C[Python Automation Suite]
+
+B --> B1[CreateUsers.ps1]
+B --> B2[ResetPassword.ps1]
+B --> B3[SystemReports.ps1]
+B --> B4[Sample CSV Inputs]
+
+C --> C1[LogAnalysis.py]
+C --> C2[AssetTracker.py]
+C --> C3[PatchReport.py]
+C --> C4[Sample Logs / SQLite DB]
+
+B1 --> D1["Active Directory (Simulated Lab)"]
+B2 --> D1
+B3 --> D2[System Information / WMI]
+
+C1 --> E1[Log Files]
+C2 --> E2[SQLite DB]
+C3 --> E3[Simulated Device List]
+
+D1 --> F[Outputs: CSV Reports / Logs]
+D2 --> F
+E1 --> G[Python Output Reports]
+E2 --> G
+E3 --> G
 ---
 
 ## 🤝 Contributing
