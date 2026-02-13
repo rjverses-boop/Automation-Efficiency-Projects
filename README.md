@@ -83,32 +83,8 @@ Additional docs located under `docs/`:
 
 flowchart TD
 
-A[IT Automation Projects Repo] --> B[PowerShell Automation Suite]
-A --> C[Python Automation Suite]
+<img width="4032" height="1102" alt="image" src="https://github.com/user-attachments/assets/1ef0efa0-3892-4b18-83e6-33ec35c42091" />
 
-B --> B1[CreateUsers.ps1]
-B --> B2[ResetPassword.ps1]
-B --> B3[SystemReports.ps1]
-B --> B4[Sample CSV Inputs]
-
-C --> C1[LogAnalysis.py]
-C --> C2[AssetTracker.py]
-C --> C3[PatchReport.py]
-C --> C4[Sample Logs / SQLite DB]
-
-B1 --> D1["Active Directory (Simulated Lab)"]
-B2 --> D1
-B3 --> D2[System Information / WMI]
-
-C1 --> E1[Log Files]
-C2 --> E2[SQLite DB]
-C3 --> E3[Simulated Device List]
-
-D1 --> F[Outputs: CSV Reports / Logs]
-D2 --> F
-E1 --> G[Python Output Reports]
-E2 --> G
-E3 --> G
 ---
 
 ## 🤝 Contributing
